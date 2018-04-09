@@ -1,0 +1,170 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #F7FBFC;
+	
+}
+
+.float-l {
+	float: left;
+}
+
+.float-r {
+	float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*====header====*/
+header {
+	background-color:  #1034A6;
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	color: #F7FBFC;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+header h1 {
+	font-size: 22px;
+	margin-left: 10px;
+}
+
+header .logo {
+	height: 100%;
+}
+
+header .logo img {
+	max-height: 100%;
+}
+
+header ul {
+	height: 100%;
+}
+
+header ul li {
+	height: inherit;
+	display: inline-block;
+	border-left: 1px solid #F7FBFC;
+}
+
+
+header ul li a {
+	height: inherit;
+	display: inline-block;
+	text-decoration: none;
+	color: #F7FBFC;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+header ul li a:hover, header ul li a:target {
+	background: #103448;
+	transition-duration: 0.2s;
+}
+
+header ul li a:active {
+	background: #1034A6;
+	transition-duration: 0.2s;
+}
+
+.active {
+	background: #3C67EB;
+}
+
+
+.freak {
+	margin: -4px;
+}
+
+
+/*=====main====*/
+
+.container {
+	width: 450px;
+	margin: 100px auto;
+}
+
+.container img {
+	width: 100%;
+
+}
+
+.container iframe {
+	width: 100%;
+	height: 315px;
+}
+
+.container audio {
+	width: 100%;
+}
+
+.container p {
+	margin-top: 10px;
+}
+
+.post {
+	margin-top: 50px;
+}
+
+.post-header {
+	border: 2px solid #001F5B;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+
+
+/*====footer====*/
+
+footer {
+	background-color: #1034A6;
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	position: relative;
+}
+
+.footer-container {
+	width: 450px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer-container ul {
+	display: inline-block;
+	padding: 0;
+}
+
+.footer-container ul li {
+	display: inherit;
+	list-style: none;
+	margin: 0 20px;
+
+}
+
+
+.footer-container ul li a {
+	color: #F7FBFC;
+	text-decoration: none;
+}
+
+
+footer p {
+	font-size: 10px;
+    font-weight: bolder;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
